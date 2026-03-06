@@ -25,7 +25,7 @@ built in Python using object-oriented programming.
 
 ### Installation
 
-git clone https://github.com/yourusername/tictactoe-python.git
+git clone https://github.com/Faceless013/tictactoe_python.git
 cd tictactoe-python
 
 ### Run the game
