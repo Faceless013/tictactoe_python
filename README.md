@@ -1,7 +1,7 @@
 # 🎮 Tic Tac Toe — Python CLI Game
 
 A fully interactive two-player Tic Tac Toe game running in the terminal,
-built in Python using object-oriented programming.
+built in Python using functions and simple data types.
 
 ![demo](assets/demo.gif)
 
@@ -60,11 +60,13 @@ with no winner, the game ends in a draw.
 
 ## 📚 What I Learned
 
-- Structuring a project using Object-Oriented Programming
+- Structuring a project using simple functions
 - Handling and validating user input robustly
 - Using nested lists to represent a 2D game board
 - Writing clean game loop logic with clear win/draw conditions
+- Using different data types in conjunction with one another
 - Setting up a professional GitHub repository from scratch
+- Setting up Git for version control and creating a working Workspace on VS Code.
 
 ---
 
@@ -87,9 +89,6 @@ See the [LICENSE](LICENSE) file for details.
 *Built as Month 1 milestone project while learning Python — part of a
 12-month development roadmap.*
 ```
-
-The **Future Improvements** section with checkboxes is particularly smart — it shows you think ahead, and as you actually add those features you can tick them off and commit the update.
-
 ---
 
 ## Step 5 — Add a Demo GIF (Big Visual Impact)
