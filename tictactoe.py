@@ -78,5 +78,4 @@ def run_game():
     display()
 
 if __name__ == "__main__":
-    run_game
-
+    run_game()
