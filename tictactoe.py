@@ -66,7 +66,8 @@ def finished(grid, symbol):
 
 #Function that asks the player if he wants to keep playing after the game is over:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 def keep_playing():
-    pass
+    while finished == True:
+        input("Do you want to keep playing ? ")
 
 #Executing the functions in order:
     player1_symbol, player2_symbol = players()
