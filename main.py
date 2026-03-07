@@ -1,5 +1,4 @@
-from tictactoe import TicTacToe
+from tictactoe import run_game
 
 if __name__ == "__main__":
-    game = TicTacToe()
-    game.run()
+    run_game
