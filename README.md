@@ -103,39 +103,10 @@ How to record it:
 
 Save the file as `demo.gif` inside your `assets/` folder. The line `![demo](assets/demo.gif)` in your README will automatically display it on GitHub. When someone opens your repo they'll see the game running before they read a single word.
 
----
----
-
-## Step 7 — Commit Strategy While Building the Project
-
-This is where most beginners go wrong — they build the whole thing then do one commit saying "finished project". Instead, commit at every logical milestone as you build. For a TicTacToe project that history should look something like this:
-```
-feat: initialise project structure and entry point
-feat: add board display function
-feat: add player input and position validation
-feat: implement win detection for rows and columns
-feat: add diagonal win detection
-feat: add draw detection
-feat: add game loop and play again prompt
-refactor: convert game logic into TicTacToe class
-docs: add README with features and instructions
-docs: add demo GIF to README
-chore: add .gitignore and MIT licence
-```
-
-
----
-
-## Step 8 — Pin It to Your Profile
-
-
----
 
 ## The Final Checklist Before Considering a Repo "Done"
 
 Run through this for every project before pinning it or sharing the link:
 ```
-
-
 ✅ Demo GIF or screenshot in the README
 ✅ Code is readable — has comments where logic isn't obvious
