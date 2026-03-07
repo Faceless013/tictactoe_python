@@ -85,28 +85,3 @@ with no winner, the game ends in a draw.
 This project is licensed under the MIT Licence.
 See the [LICENSE](LICENSE) file for details.
 
----
-
-*Built as Month 1 milestone project while learning Python — part of a
-12-month development roadmap.*
-```
----
-
-## Step 5 — Add a Demo GIF (Big Visual Impact)
-
-This single thing separates good repos from great ones. A GIF of your game actually running takes 2 minutes to make and makes your README look professional immediately.
-
-How to record it:
-
-- On Windows, download **ScreenToGif** (free, google it) — open it, drag the recording frame over your terminal, play your game, stop recording, export as GIF
-- On Mac, use **Kap** (free) — same process
-
-Save the file as `demo.gif` inside your `assets/` folder. The line `![demo](assets/demo.gif)` in your README will automatically display it on GitHub. When someone opens your repo they'll see the game running before they read a single word.
-
-
-## The Final Checklist Before Considering a Repo "Done"
-
-Run through this for every project before pinning it or sharing the link:
-```
-✅ Demo GIF or screenshot in the README
-✅ Code is readable — has comments where logic isn't obvious
