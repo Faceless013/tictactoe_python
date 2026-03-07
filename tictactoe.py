@@ -23,23 +23,23 @@ def players():
 
 #Function that displays the grid:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-def display():
+def display(grid):
     print(grid[0:3])
     print(grid[3:6])
     print(grid[6:9])
 
 #Function that takes Player 1's move and modifies the board accordiingly:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-def player_move(player1_symbol):
+def player_move(grid, symbol):
     while True:
         try:
-            result = int(input("Choose your next position (1-9):"))
+            result = int(input(f"Player {symbol}, choose your next position (1-9):"))
             if result not in range(1,10):
                 print("That number is not in the required range.")
                 continue
             elif grid[result-1] in ["X","O"]:
                 print("That position is already taken.")
                 continue
-            grid[result-1] = player1_symbol
+            grid[result-1] = symbol
             break
         except ValueError:
             print("Please input a number.")
