@@ -71,11 +71,30 @@ def keep_playing():
 
 
 def run_game():   
-    player1_symbol, player2_symbol = players()
-    display()
-    player_move(player1_symbol)
-    display()
+    play = True
 
+    while play:
+        grid = [1,2,3,4,5,6,7,8,9]
+        player1_symbol, player2_symbol = players
+        current_symbol = player1_symbol
+
+        while True:
+            display(grid)
+            player_move(grid, current_symbol)
+
+            if finished(grid, current_symbol):
+                display(grid)
+                print(f"Congratulations ! Player {current_symbol} has won !")
+                break
+
+            if draw(grid):
+                display(grid)
+                print("This game has ended in a draw.")
+                break
+
+            current_symbol = player2_symbol if current_symbol == player1_symbol else current_symbol == player1_symbol
+        
+        play = keep_playing()
 
 if __name__ == "__main__":
     run_game()
