@@ -11,24 +11,15 @@ Rules:
 grid = [1,2,3,4,5,6,7,8,9]                                                                #Assigning the grid.
 
 def players():
-    player1_symbol = ""
-    player2_symbol = ""
-    result = ""
-    symbol = ["O","X"]
-
-    while result not in symbol:                                                            #Asking the user to choose his symbol:
-        result = input("Player 1: Do you want to be the O or X:")
-
-    if result == "X":                                                                          #Assigning the symbol to each player:  
-        player1_symbol = "X"
-        player2_symbol = "O"
-        print("Player 1 is X and Player 2 is O")
-    elif result == "O":
-        player1_symbol = "O"
-        player2_symbol = "X"
-        print("Player One is O and Player Two is X")
-    
-    return player1_symbol, player2_symbol
+    while True:
+        result = int(input("Player 1: Do you want to be O or X"))
+        if result in ("O","X"):
+            if result == "X":
+                print("Player 1 is X and Player 2 is O")
+            else:
+                print("Player 1 is O and Player 2 is X")
+        else:
+            print("Please choose either X or O")
 
 #Function that displays the grid:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
