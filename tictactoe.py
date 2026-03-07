@@ -37,7 +37,7 @@ def display():
     print(grid[6:9])
 
 #Function that takes Player 1's move and modifies the board accordiingly:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-def player_move1(player1_symbol):
+def player_move(player1_symbol):
     while True:
         try:
             result = int(input("Choose your next position (1-9):"))
@@ -48,22 +48,6 @@ def player_move1(player1_symbol):
                 print("That position is already taken.")
                 continue
             grid[result-1] = player1_symbol
-            break
-        except ValueError:
-            print("Please inout a number.")
-
-#Function that takes Player 2's move and modifies the board accordingly:-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-def player_move2(player2_symbol):
-    while True:
-        try:
-            result = int(input("Choose your next position (1-9):"))
-            if result not in range(1,10):
-                print("That number is not in the required range.")
-                continue
-            elif grid[result-1] in ["X","O"]:
-                print("That position is already taken.")
-                continue
-            grid[result-1] = player2_symbol
             break
         except ValueError:
             print("Please inout a number.")
@@ -85,7 +69,6 @@ def keep_playing():
     pass
 
 #Executing the functions in order:
-while finished(grid, symbol) == False:
     player1_symbol, player2_symbol = players()
     display()
     player_move1(player1_symbol)
