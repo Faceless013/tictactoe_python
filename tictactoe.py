@@ -5,10 +5,8 @@ Rules:
 2) The board should be printed out after every move.
 3) You should be able to accept the input of the player position and then place a symbol on the board.
 """
-#Function that attributes X and O to each of the players:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-grid = [1,2,3,4,5,6,7,8,9]                                                                #Assigning the grid.
+grid = [1,2,3,4,5,6,7,8,9]                                                               
 
 def players():
     while True:
@@ -21,14 +19,12 @@ def players():
         else:
             print("Please choose either X or O")
 
-#Function that displays the grid:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 def display(grid):
     print(grid[0:3])
     print(grid[3:6])
     print(grid[6:9])
 
-#Function that takes Player 1's move and modifies the board accordiingly:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 def player_move(grid, symbol):
     while True:
         try:
@@ -44,7 +40,6 @@ def player_move(grid, symbol):
         except ValueError:
             print("Please input a number.")
 
-#Function that detects if the game is finished:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 def finished(grid, symbol):
     winning_list = (
         (0,1,2), (3,4,5), (6,7,8),
@@ -56,12 +51,10 @@ def finished(grid, symbol):
             return True   
     return False
 
-#Function that asks the player if he wants to keep playing after the game is over:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 def keep_playing():
     while finished == True:
         input("Do you want to keep playing ? ")
 
-#Executing the functions in order:
 def run_game():   
     player1_symbol, player2_symbol = players()
     display()
