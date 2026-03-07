@@ -8,6 +8,7 @@ Rules:
 
 grid = [1,2,3,4,5,6,7,8,9]                                                               
 
+
 def players():
     while True:
         result = int(input("Player 1: Do you want to be O or X"))
@@ -18,6 +19,7 @@ def players():
                 print("Player 1 is O and Player 2 is X")
         else:
             print("Please choose either X or O")
+
 
 def display(grid):
     print(grid[0:3])
@@ -40,6 +42,7 @@ def player_move(grid, symbol):
         except ValueError:
             print("Please input a number.")
 
+
 def finished(grid, symbol):
     winning_list = (
         (0,1,2), (3,4,5), (6,7,8),
@@ -51,15 +54,28 @@ def finished(grid, symbol):
             return True   
     return False
 
+
+def draw(grid):
+    return all(case in ("X","O") for case in grid)
+
+
 def keep_playing():
-    while finished == True:
-        input("Do you want to keep playing ? ")
+    while True:
+        answer = input("Do you want to keep playing (Y or N)? ")
+        if answer in ("Y","y","yes"):
+            return True
+        if answer in ("N","n","no"):
+            return False
+        else:
+            print("Please enter either yes or no. ")
+
 
 def run_game():   
     player1_symbol, player2_symbol = players()
     display()
     player_move(player1_symbol)
     display()
+
 
 if __name__ == "__main__":
     run_game()
