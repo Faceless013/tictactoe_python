@@ -65,6 +65,7 @@ with no winner, the game ends in a draw.
 - Using nested lists to represent a 2D game board
 - Writing clean game loop logic with clear win/draw conditions
 - Using different data types in conjunction with one another
+- How to use Github in general
 - Setting up a professional GitHub repository from scratch
 - Setting up Git for version control and creating a working Workspace on VS Code.
 
@@ -103,17 +104,6 @@ How to record it:
 Save the file as `demo.gif` inside your `assets/` folder. The line `![demo](assets/demo.gif)` in your README will automatically display it on GitHub. When someone opens your repo they'll see the game running before they read a single word.
 
 ---
-
-## Step 6 — Configure the Repo's About Section on GitHub
-
-On your repo's main page on GitHub, click the **gear icon** next to "About" on the right side. Fill in:
-
-- **Description:** same one-liner as your repo description
-- **Website:** leave blank for now
-- **Topics:** add these tags: `python`, `game`, `cli`, `tic-tac-toe`, `beginner`, `object-oriented-programming`
-
-These coloured topic badges appear at the top of your repo and make it look polished. They also make your repo discoverable.
-
 ---
 
 ## Step 7 — Commit Strategy While Building the Project
@@ -133,13 +123,11 @@ docs: add demo GIF to README
 chore: add .gitignore and MIT licence
 ```
 
-That commit history tells a story. Anyone reading it can follow exactly how you built the project step by step. It demonstrates genuine process, not just a finished result dropped online.
 
 ---
 
 ## Step 8 — Pin It to Your Profile
 
-Once the repo is live and looking good, go to your GitHub profile page → click **Customize your pins** → select `tictactoe-python`. It will now appear as one of the featured repos on your profile homepage for anyone who visits.
 
 ---
 
@@ -147,14 +135,7 @@ Once the repo is live and looking good, go to your GitHub profile page → click
 
 Run through this for every project before pinning it or sharing the link:
 ```
-✅ Repository name is lowercase with hyphens
-✅ One-line description filled in on GitHub
-✅ README has a title, description, features, how to run, what I learned
+
+
 ✅ Demo GIF or screenshot in the README
-✅ .gitignore is present (no venv/ or __pycache__ visible in the repo)
-✅ LICENSE file present
-✅ Topics/tags added in the About section
-✅ At least 5–6 meaningful commits with descriptive messages
-✅ No passwords, API keys or .env files committed
 ✅ Code is readable — has comments where logic isn't obvious
-✅ Pinned to profile if it's one of your best 6 projects
