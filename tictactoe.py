@@ -71,8 +71,12 @@ def keep_playing():
         input("Do you want to keep playing ? ")
 
 #Executing the functions in order:
-player1_symbol, player2_symbol = players()
-display()
-player_move(player1_symbol)
-display()
+def run_game():   
+    player1_symbol, player2_symbol = players()
+    display()
+    player_move(player1_symbol)
+    display()
+
+if __name__ == "__main__":
+    run_game
 
