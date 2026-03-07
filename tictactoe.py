@@ -4,6 +4,7 @@ Rules:
 1) Two players should be able to play the game.
 2) The board should be printed out after every move.
 3) You should be able to accept the input of the player position and then place a symbol on the board.
+4) The game can also finish in a draw.
 """
 
 grid = [1,2,3,4,5,6,7,8,9]                                                               
