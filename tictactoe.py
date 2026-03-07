@@ -6,12 +6,13 @@ Rules:
 3) You should be able to accept the input of the player position and then place a symbol on the board.
 """
 #Function that attributes X and O to each of the players:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-player1_symbol = ""
-player2_symbol = ""
+
 
 grid = [1,2,3,4,5,6,7,8,9]                                                                #Assigning the grid.
 
 def players():
+    player1_symbol = ""
+    player2_symbol = ""
     result = ""
     symbol = ["O","X"]
 
@@ -50,7 +51,7 @@ def player_move(player1_symbol):
             grid[result-1] = player1_symbol
             break
         except ValueError:
-            print("Please inout a number.")
+            print("Please input a number.")
 
 #Function that detects if the game is finished:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 def finished(grid, symbol):
@@ -70,8 +71,8 @@ def keep_playing():
         input("Do you want to keep playing ? ")
 
 #Executing the functions in order:
-    player1_symbol, player2_symbol = players()
-    display()
-    player_move1(player1_symbol)
-    display()
-    player_move2(player2_symbol)
+player1_symbol, player2_symbol = players()
+display()
+player_move(player1_symbol)
+display()
+
